@@ -3,48 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>X.It's what's happening/X</title>
+    <title>X - It's what's happening</title>
     <link rel="stylesheet" href="X.css">
 </head>
 <body>
-    <div class="container">
-        <div class="left-section">
-            <div class="X-logo"> 𝕏 </div>
+    <div class="main-container">
+        <div class="logo-section">
+            <div class="logo-container">
+                <svg viewBox="0 0 24 24" class="x-logo" aria-hidden="true">
+                    <g>
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+                    </g>
+                </svg>
+            </div>
         </div>
         
-        <div class="right-section">
+        <div class="login-section">
             <div class="login-container">
-                <h1>Happening now</h1>
+                <div class="tagline">Happening now</div>
                 <h2>Join today.</h2>
                 
                 <div class="auth-options">
                     <button class="auth-btn google-btn">
-                        Sign up with Google
+                        <span class="btn-icon google"></span> Sign up with Google
                     </button>
                     <button class="auth-btn apple-btn">
-                        Sign up with Apple
+                        <span class="btn-icon apple"></span> Sign up with Apple
                     </button>
                     
                     <div class="divider">
-                        <span class="divider-line"></span>
-                        <span class="divider-text">OR</span>
-                        <span class="divider-line"></span>
+                        <div class="divider-line"></div>
+                        <div class="divider-text">OR</div>
+                        <div class="divider-line"></div>
                     </div>
                     
-                    <button class="auth-btn phone-btn">Create account</button>
-                    
-                    <p class="terms">
-                        By signing up, you agree to the <a href="#">Terms of Service</a> and 
-                        <a href="#">Privacy Policy</a>, including <a href="#">Cookie Use</a>.
-                    </p>
+                    <button class="auth-btn create-account-btn">
+                        Create account
+                    </button>
                 </div>
-                <div class="additional-buttons">
-                    <button class="centered-btn">
-                        Sign in
-                    </button>
-                    <button class="centered-btn">
-                        Get Grok
-                    </button>
+                
+                <p class="terms">
+                    By signing up, you agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>, including <a href="#">Cookie Use</a>.
+                </p>
+                
+                <div class="login-prompt">
+                    <h3>Already have an account?</h3>
+                    <div class="button-group">
+                        <button class="auth-btn sign-in-btn">
+                            Sign in
+                        </button>
+                        <button class="auth-btn get-app-btn">
+                            Get the app
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -83,13 +94,11 @@
                 <span class="separator">|</span>
                 <a href="#">Settings</a>
                 <span class="separator">|</span>
-               <div class="copyright">© 2025 X Corp.
-               </div> 
-            </div>
-            <script>
-                document.querySelector('.copyright').textContent = '© ' + new Date().getFullYear() + ' X Corp.';
-            </script>
+            <div class="copyright">© 2025 X Corp.</div>
         </div>
     </footer>
+    <script>
+        document.querySelector('.copyright').textContent = '© ' + new Date().getFullYear() + ' X Corp.';
+    </script>
 </body>
 </html>
